@@ -253,7 +253,8 @@ ul {
   min-height: 450px;
   object-fit: cover;
 }
-.slider-content button {
+.slider-content button,
+.text-block button {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.75);
   font-weight: 500;
@@ -265,10 +266,11 @@ ul {
   text-transform: uppercase;
   cursor: pointer;
 }
-.slider-content button:hover {
+.slider-content button:hover,
+.text-block button:hover {
   background-color: black;
   color: white;
-  transition: .5s linear;
+  transition: 0.5s linear;
 }
 
 @media screen and (max-width: 1020px) {
@@ -315,7 +317,7 @@ ul {
 .categories {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   position: relative;
 }
 .categories img {
@@ -335,7 +337,7 @@ ul {
 }
 
 .categories h4:after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   position: absolute;
@@ -344,41 +346,258 @@ ul {
   padding-top: 10px;
 }
 
-.categories h4:hover:after { 
-  width: 100%; 
+.categories h4:hover:after {
+  width: 100%;
 }
-#earrings-C:after{
-border-bottom:3px solid #D6A78F;
+#earrings-C:after {
+  border-bottom: 3px solid #d6a78f;
 }
-#bracelets-C::after{
-  border-bottom: 3px solid #FAE0A3;
+#bracelets-C::after {
+  border-bottom: 3px solid #fae0a3;
 }
-#necklaces-C::after{
-  border-bottom: 3px solid #FDC7B2;
+#necklaces-C::after {
+  border-bottom: 3px solid #fdc7b2;
 }
-#rings-C::after{
-  border-bottom: 3px solid #F9CDA7;
+#rings-C::after {
+  border-bottom: 3px solid #f9cda7;
 }
-#clearance-C::after{
-  border-bottom: 3px solid #97CFED;
+#clearance-C::after {
+  border-bottom: 3px solid #97cfed;
 }
-#pendants-C::after{
-  border-bottom: 3px solid #F5CCE5;
+#pendants-C::after {
+  border-bottom: 3px solid #f5cce5;
 }
-@media (min-width: 768px){
-  .clearance{
+@media (min-width: 768px) {
+  .clearance {
     order: 2;
   }
-  .pendants{
+  .pendants {
     order: 1;
   }
 }
 
-@media (min-width: 992px){
-  .clearance{
+@media (min-width: 992px) {
+  .clearance {
     order: 1;
   }
-  .pendants{
+  .pendants {
     order: 2;
+  }
+}
+
+/* WHat`s hot */
+.hot h4 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.hot-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hot-offers h6 a {
+  font-size: 10px;
+  color: #f0a285;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hot-offers p {
+  font-size: 13px;
+}
+.image-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+.image-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  transition: 0.5s linear;
+}
+.image-card .hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.image-card:hover .hidden {
+  opacity: 1;
+}
+
+.hot-offers .icons {
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s linear;
+}
+.hot-offers .icons i {
+  outline: none;
+  background-color: #f9cda7;
+  border-radius: 60px;
+  border: none;
+  color: black;
+  padding: 10px;
+}
+.image-card:hover .icons {
+  opacity: 1;
+}
+
+@media (min-width: 360px) {
+  .hot-offers .icons i {
+    font-size: 30px;
+    margin: 0 30px;
+  }
+}
+@media (min-width: 768px) {
+  .hot-offers .icons i {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .hot-offers .icons i {
+    font-size: 15px;
+    margin: 0px 10px;
+  }
+}
+
+/* Banners */
+.banners {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.banners img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.35s linear;
+  transform: scale(1.25);
+}
+.banners div {
+  overflow: hidden;
+  padding: 0;
+}
+.banners img:hover {
+  transform: scale(1);
+}
+
+/* Video banner */
+
+video {
+  width: 100%;
+  opacity: 0.4;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.video-banner h2 {
+  letter-spacing: 2.5px;
+  font-size: 46px;
+}
+.video-banner {
+  position: relative;
+}
+.video-banner .text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 700px;
+}
+.text-block button {
+  background-color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 760px) {
+  .video-banner .text-block h2 {
+    font-size: 35px;
+  }
+  .video-banner .text-block p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .video-banner .text-block h2 {
+    font-size: 25px;
+  }
+  .video-banner .text-block p {
+    display: none;
+  }
+  .video-banner .text-block {
+    width: 100%;
+  }
+  .video-banner .text-block h2 {
+    letter-spacing: 0.5px;
+  }
+}
+
+/* BLog */
+.blog img {
+  width: 100%;
+  height: auto;
+}
+.blog-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 60px;
+}
+.blog-block h4
+ {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 33px;
+  margin-top: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .blog-block {
+    padding: 25px 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .blog-block h4 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+/* TESTIMONIALS */
+.testimonials h6 {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.testimonials p {
+  font-size: 13px;
+  color: gray;
+  margin-top: 7px;
+}
+
+/* Foolow insta */
+.insta-block{
+display: flex;
+flex-wrap: wrap;
+}
+.insta-block img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px;
+  margin: 20px 0;
+}
+@media (max-width: 1100px) {
+  .insta-block img{
+    margin: 10px 0;
   }
 }
