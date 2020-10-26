@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css"> -->
+    <!-- <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
+    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"
+        integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/430e53cfcb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="67f22dd7d5cabbc11762350c-|49" defer=""></script>
+    <script src="../main/main.js"></script>
+
+    <title>Shop</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="left-navbar">
+                <a class="nav-link  text-uppercase" id="home" href="../main/main.html">Home</a>
+                <a class="nav-link active text-uppercase" href="#" id="shopDropdown">
+                    Shop <i class="fas fa-angle-down pl-1"></i>
+                </a>
+                <div id="shop" class="dropdown-content" aria-labelledby="shopDropdown">
+                    <div id="jewelry" class="col-lg-2 col-sm-6">
+                        <h5><a href="">Jewelry</a></h5>
+                        <ul>
+                            <h6><a href="">Bracelets</a></h6>
+                            <h6><a href="">Earrings</a></h6>
+                            <h6><a href="">Necklaces</a></h6>
+                            <h6><a href="">Pendants</a></h6>
+                            <h6><a href="">Rings</a></h6>
+                        </ul>
+                    </div>
+                    <div id="collections" class="col-lg-2 col-sm-6">
+                        <h5><a href="">Collections</a></h5>
+                        <ul>
+                            <h6><a href="">Classic</a></h6>
+                            <h6><a href="">Roman Barocco</a></h6>
+                            <h6><a href="">Retro</a></h6>
+                            <h6><a href="">Modern</a></h6>
+                            <h6><a href="">Symphony</a></h6>
+                            <h6><a href="">Gourmette</a></h6>
+                            <h6><a href="">Prences</a></h6>
+                        </ul>
+                    </div>
+                    <div id="featured-products" class="col-lg-4 col-md-6 col-sm-12">
+                        <h5><a href="">Featured products</a></h5>
+                        <div class="d-flex pb-4 pt-3">
+                            <a href="">
+                                <img src="../images/Thread-18-karat-rose-gold-diamond-eternity-ring-3-600x900.jpg"
+                                    alt="">
+                            </a>
+                            <div class="right-side">
+                                <h6><a href="">Earrings, </a><a href="">Necklaces, </a><a href="">Rings</a></h6>
+                                <p>Thread 18-karat rose gold diamond eternity ring</p>
+                                <h5><del>$265.00</del> $235.00</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <a href=""><img src="../images/Liquid-Hoops-gold-plated-earrings-1-768x1152.jpg" alt="">
+                            </a>
+                            <div class="right-side">
+                                <h6><a href="">Bracelets,</a><a href="">Earrings</a></h6>
+                                <p>Ippolita Love Diamond Compass Pendant</p>
+                                <h5>$198.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" id="sale-image">
+                        <img src="../images/header-shop.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <a class="nav-link text-uppercase" id="blog" href="#">Blog</a>
+                <div>
+
+                    <a class="nav-link  text-uppercase" href="#" id="servicesDropdown" onfocus="hover(this)">
+                        Services <i class="fas fa-angle-down pl-1"></i>
+                    </a>
+                    <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown">
+                        <ul>
+                            <h6><a href="">Shopping guide</a></h6>
+                            <h6><a href="">Wardrobe assistant</a></h6>
+                            <h6><a href="">Basic cosmetics</a></h6>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="nav-link text-uppercase" id="gallery" href="#">Gallery</a>
+            </div>
+
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="right-navbar">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-basket"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </nav>
+        <div class="nav-toggle">
+            <span class="nav-toggle-item"></span>
+        </div>
+    </header>
+
+
+    <!-- Breadcrumb -->
+
+    <section class="breadcrumbs-area">
+        <h3 class="text-center">SHOP</h3>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../main/main.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+        </ol>
+    </section>
+
+    <!-- Main section -->
+    <div class="main-section ">
+        <section class="filter col-lg-3 col-md-4 col-sm-12">
+            <div id="categories">
+                <h5 class="text-center">Categories</h5>
+                <ul>
+                    <h6><input type="checkbox" checked>Bracelets</h6>
+                    <h6><input type="checkbox">Bridal</h6>
+                    <h6><input type="checkbox">Earrings</h6>
+                    <h6><input type="checkbox">Necklaces</h6>
+                    <h6><input type="checkbox">Rings</h6>
+                </ul>
+            </div>
+            <div class="filter mb-5 mt-5">
+                <h5 class="text-center">Filter by price</h5>
+                <div slider id="slider-distance">
+                    <div>
+                        <div inverse-left style="width:70%;"></div>
+                        <div inverse-right style="width:70%;"></div>
+                        <div range style="left:30%;right:40%;"></div>
+                        <span thumb style="left:30%;"></span>
+                        <span thumb style="left:60%;"></span>
+                        <div sign style="left:30%;">
+                            <span id="value">30</span><span>$</span>
+                        </div>
+                        <div sign style="left:60%;">
+                            <span id="value">60</span><span>$</span>
+                        </div>
+                    </div>
+                    <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="if (!window.__cfRLUnblockHandlers) return false; 
+                  this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                  var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                  var children = this.parentNode.childNodes[1].childNodes;
+                  children[1].style.width=value+'%';
+                  children[5].style.left=value+'%';
+                  children[7].style.left=value+'%';children[11].style.left=value+'%';
+                  children[11].childNodes[1].innerHTML=this.value;" />
+                    <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="if (!window.__cfRLUnblockHandlers) return false; 
+                  this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                  var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                  var children = this.parentNode.childNodes[1].childNodes;
+                  children[3].style.width=(100-value)+'%';
+                  children[5].style.right=(100-value)+'%';
+                  children[9].style.left=value+'%';children[13].style.left=value+'%';
+                  children[13].childNodes[1].innerHTML=this.value;" />
+                </div>
+            </div>
+            <div class="products">
+                <h5 class="text-center">Products</h5>
+                <div class="pb-4 pt-3 d-flex">
+                    <a href="">
+                        <img src="../images/Thread-18-karat-rose-gold-diamond-eternity-ring-3-600x900.jpg" alt="">
+                    </a>
+                    <div class="right-side">
+                        <h6><a href="">Necklaces, </a><a href="">Rings</a></h6>
+                        <p>Thread 18-karat rose gold diamond eternity ring</p>
+                        <h5><del>$265.00</del> $235.00</h5>
+                    </div>
+                </div>
+                <div class="pb-4 pt-3 d-flex">
+                    <a href="">
+                        <img src="../images/Liquid-Hoops-gold-plated-earrings-1-768x1152.jpg" alt="">
+                    </a>
+                    <div class="right-side">
+                        <h6><a href="">Earrings, </a><a href="">Necklaces, </a></h6>
+                        <p>Ippolita Love Diamond Compass Pendant</p>
+                        <h5>$235.00</h5>
+                    </div>
+                </div>
+                <div class="pb-4 pt-3 d-flex">
+                    <a href="">
+                        <img src="../images/Mini-Petal-rose-gold-vermeil-and-silver-earrings-768x1152.jpg" alt="">
+                    </a>
+                    <div class="right-side">
+                        <h6><a href="">Earrings, </a><a href="">Necklaces, </a></h6>
+                        <p>Michael Kors Legends Naga Chandelier Earrings in Sterling Silver</p>
+                        <h5>$450.00</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="goods col-lg-9 col-md-8">
+            <div>
+                <div class="hot-offers">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                        <a href="">
+                            <div class="image-card">
+                                <img src="../images/Thread-18-karat-rose-gold-diamond-eternity-ring-3-600x900.jpg"
+                                    alt="">
+                                <img src="../images/Thread-18-karat-rose-gold-diamond-eternity-ring-6.jpg" alt=""
+                                    class="hidden">
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div>
+                            <h6 class="mt-1"><a href="">Earrings, </a><a href="">Necklaces, </a><a href="">Rings</a>
+                            </h6>
+                            <p class="mb-1">Thread 18-karat rose gold diamond eternity ring</p>
+                            <h6><del>$265.00</del>$235.00</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                        <a href="">
+                            <div class="image-card">
+                                <img src="../images/Technical-Berbere-18-karat-rose-gold-ring-3-768x1152.jpg" alt="">
+                                <img src="../images/Technical-Berbere-18-karat-rose-gold-ring-2-768x1152.jpg" alt=""
+                                    class="hidden">
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <h6 class="mt-1"><a href="">Necklaces, </a><a href="">Rings</a></h6>
+                            <p class="mb-1">The Forevermark Tribute Collection White Gold Classic Bezel Stackable Ring
+                            </p>
+                            <h6>$158.00</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                        <a href="">
+                            <div class="image-card">
+                                <img src="../images/Gold-plated-choker-768x1152.jpg" alt="">
+                                <img src="../images/Gold-plated-choker-4-768x1152.jpg" alt="" class="hidden">
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <h6 class="mt-1"><a href="">Bracelets, </a><a href="">Necklaces</a></h6>
+                            <p class="mb-1">Roberto Coin Two Tone Heart Locket</p>
+                            <h6>$254.00</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                        <a href="">
+                            <div class="image-card">
+                                <img src="../images/Gold-plated-bangle-768x1152.jpg" alt="">
+                                <img src="../images/Gold-plated-bangle-5-768x1152.jpg" alt="" class="hidden">
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <h6 class="mt-1"><a href="">Bracelets, </a><a href="">Bridal</a></h6>
+                            <p class="mb-1">Two-Tone Classic Chain Hammered Link Bracelet From Michael Kors</p>
+                            <h6>$158.00</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                        <a href="">
+                            <div class="image-card">
+                                <img src="../images/Mini-Petal-rose-gold-vermeil-and-silver-earrings-768x1152.jpg"
+                                    alt="">
+                                <img src="../images/Mini-Petal-rose-gold-vermeil-and-silver-earrings-5-683x1024.jpg"
+                                    alt="" class="hidden">
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <h6 class="mt-1"><a href="">Earrings, </a><a href="">Necklaces</a></h6>
+                            <p class="mb-1">Michael Kors Legends Naga Chandelier Earrings in Sterling Silver</p>
+                            <h6>$450.00</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                        <a href="">
+                            <div class="image-card">
+                                <img src="../images/18-karat-gold-bracelet-3-768x1152.jpg" alt="">
+                                <img src="../images/18-karat-gold-bracelet-2-683x1024.jpg" alt="" class="hidden">
+                                <div class="icons">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div>
+                            <h6 class="mt-1"><a href="">Bracelets, </a><a href="">Bridal</a></h6>
+                            <p class="mb-1">Gucci Diamond Bolo Bracelet</p>
+                            <h6>$220.00</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="col-lg-2 col-md-3 pb-3 col-sm-6">
+            <h5>Collection</h5>
+            <ul>
+                <a href="">
+                    <h6>Bracelets</h6>
+                </a>
+                <a href="">
+                    <h6>Bridal</h6>
+                </a>
+                <a href="">
+                    <h6>Earrings</h6>
+                </a>
+                <a href="">
+                    <h6>Necklaces</h6>
+                </a>
+                <a href="">
+                    <h6>Rings</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 pb-3 col-sm-6">
+            <h5>Pages</h5>
+            <ul>
+                <a href="">
+                    <h6>Home</h6>
+                </a>
+                <a href="">
+                    <h6>Blog</h6>
+                </a>
+                <a href="">
+                    <h6>Shop</h6>
+                </a>
+                <a href="">
+                    <h6>Services</h6>
+                </a>
+                <a href="">
+                    <h6>Gallery</h6>
+                </a>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-3">
+            <h5>About</h5>
+            <p>Chantalle is a luxurios jewelry store where every woman finds her perfect item, created specially for
+                her. Our mission is to highlight ladies’ beauty and add some chic, glamour and brightness to their
+                outfit.</p>
+        </div>
+        <div class="col-lg-4 pb-3">
+            <h5>SIGN UP FOR OUR NEWSLETTER</h5>
+            <p>Want to be informed about the latest novelties and updates? Subscribe now!</p>
+            <form action="">
+                <input type="text" placeholder="Enter your email">
+                <button><i class="fas fa-envelope"></i></button>
+            </form>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</body>
+
+</html>
