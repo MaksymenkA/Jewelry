@@ -67,6 +67,7 @@ nav {
   /* display: block; */
   /* display: flex; */
   padding: 35px 20px;
+  flex-wrap: wrap;
 }
 
 #shop a,
@@ -80,6 +81,10 @@ nav {
 #services h6 {
   font-size: 11px;
   padding: 4px 0;
+}
+#shop h6 a:hover,
+#services h6 a:hover {
+  color: #f0a285;
 }
 #shop h5 {
   font-size: 15px;
@@ -196,13 +201,20 @@ ul {
   .nav-toggle-item {
     display: block;
   }
-}
-@media screen and (max-width: 920px) {
   .right-navbar {
     padding-right: 15px;
   }
   .right-navbar i {
     padding: 0 4px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-navbar {
+    padding: 5px 0;
+  }
+  .right-navbar {
+    padding-right: 4px;
   }
 }
 
@@ -303,7 +315,7 @@ ul {
     top: 30%;
     right: 0;
     transform: none;
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
   #first-slide img,
@@ -551,8 +563,7 @@ video {
   flex-wrap: wrap;
   padding: 25px 60px;
 }
-.blog-block h4
- {
+.blog-block h4 {
   font-size: 26px;
   font-weight: 600;
   line-height: 33px;
@@ -585,11 +596,11 @@ video {
 }
 
 /* Foolow insta */
-.insta-block{
-display: flex;
-flex-wrap: wrap;
+.insta-block {
+  display: flex;
+  flex-wrap: wrap;
 }
-.insta-block img{
+.insta-block img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -597,7 +608,141 @@ flex-wrap: wrap;
   margin: 20px 0;
 }
 @media (max-width: 1100px) {
-  .insta-block img{
+  .insta-block img {
     margin: 10px 0;
+  }
+}
+/* Sales */
+.sales {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Montserrat", Sans-serif;
+}
+.sales img {
+  float: left;
+  margin-right: 10px;
+}
+.sale {
+  background-color: #f5cce5;
+}
+.gift {
+  background-color: #fef2e1;
+}
+.percentage {
+  background-color: #ebf4f9;
+}
+.sale,
+.gift,
+.percentage {
+  padding: 15px 0 0;
+}
+
+.sales a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.sales p {
+  font-size: 12px;
+}
+.sales a:hover {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 360px) {
+  .sale div,
+  .gift div,
+  .percentage div {
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .sales img {
+    object-fit: scale-down;
+  }
+  .sale,
+  .gift,
+  .percentage {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .sales a {
+    font-size: 11px;
+  }
+  .sale div,
+  .gift div,
+  .percentage div {
+    align-items: flex-start;
+  }
+
+  .sale,
+  .gift,
+  .percentage {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .sales a {
+    font-size: 14px;
+  }
+}
+/* Footer */
+footer {
+  display: flex !important;
+  flex-wrap: wrap;
+  background-color: #f3f5f7;
+  padding: 40px 15px;
+}
+footer h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer h6 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 10px 0;
+}
+footer a:hover,
+footer h6:hover {
+  text-decoration: none;
+  color: #f0a285;
+}
+footer p {
+  font-size: 14px;
+}
+footer input {
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+}
+footer button {
+  outline: none;
+  padding: 7px 15px;
+  border: none;
+  background-color: white;
+  color: #f0a285;
+  cursor: pointer;
+}
+footer button:hover {
+  color: black;
+}
+
+@media (min-width: 400px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 450px) {
+  footer {
+    padding: 50px 50px 20px 50px;
   }
 }
