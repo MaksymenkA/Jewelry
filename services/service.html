@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"
+    integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/430e53cfcb.js" crossorigin="anonymous"></script>
+<script src="../main/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <div class="left-navbar">
+            <a class="nav-link  text-uppercase" id="home" href="../main/main.html">Home</a>
+            <a class="nav-link  text-uppercase" href="../shop/shop.html" id="shopDropdown" >
+              Shop <i class="fas fa-angle-down pl-1"></i>
+            </a>
+            <div id="shop" class="dropdown-content" aria-labelledby="shopDropdown">
+              <div id="jewelry" class="col-lg-2 col-sm-6">
+                <h5><a href="">Jewelry</a></h5>
+                <ul>
+                  <h6><a href="">Bracelets</a></h6>
+                  <h6><a href="">Earrings</a></h6>
+                  <h6><a href="">Necklaces</a></h6>
+                  <h6><a href="">Pendants</a></h6>
+                  <h6><a href="">Rings</a></h6>
+                </ul>
+              </div>
+              <div id="collections" class="col-lg-2 col-sm-6">
+                <h5><a href="">Collections</a></h5>
+                <ul>
+                  <h6><a href="">Classic</a></h6>
+                  <h6><a href="">Roman Barocco</a></h6>
+                  <h6><a href="">Retro</a></h6>
+                  <h6><a href="">Modern</a></h6>
+                  <h6><a href="">Symphony</a></h6>
+                  <h6><a href="">Gourmette</a></h6>
+                  <h6><a href="">Prences</a></h6>
+                </ul>
+              </div>
+              <div id="featured-products" class="col-lg-4 col-md-6 col-sm-12">
+                <h5><a href="">Featured products</a></h5>
+                <div class="d-flex pb-4 pt-3">
+                  <a href="">
+                    <img src="../images/Thread-18-karat-rose-gold-diamond-eternity-ring-3-600x900.jpg" alt="">
+                  </a>              
+                  <div class="right-side">
+                    <h6><a href="">Earrings, </a><a href="">Necklaces, </a><a href="">Rings</a></h6>
+                    <p>Thread 18-karat rose gold diamond eternity ring</p>
+                    <h5><del>$265.00</del> $235.00</h5>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a href=""><img src="../images/Liquid-Hoops-gold-plated-earrings-1-768x1152.jpg" alt=""> </a>              
+                  <div class="right-side">
+                    <h6><a href="">Bracelets,</a><a href="">Earrings</a></h6>
+                    <p>Ippolita Love Diamond Compass Pendant</p>
+                    <h5>$198.00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4" id="sale-image">
+                <img src="../images/header-shop.jpg" alt="">
+              </div>
+            </div>
+    
+    
+            <a class="nav-link text-uppercase" id="blog" href="../blog/blog.html">Blog</a>
+            <div>
+    
+              <a class="nav-link active text-uppercase" href="services.html" id="servicesDropdown" onfocus="hover(this)">
+                Services <i class="fas fa-angle-down pl-1"></i>
+              </a>
+              <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown">
+                <ul>
+                  <h6><a href="">Shopping guide</a></h6>
+                  <h6><a href="">Wardrobe assistant</a></h6>
+                  <h6><a href="">Basic cosmetics</a></h6>
+                </ul>
+              </div>
+            </div>
+    
+            <a class="nav-link text-uppercase" id="gallery" href="../gallery/gallery.html">Gallery</a>
+          </div>
+    
+          <div class="logo">
+            <img src="../images/logo.png" alt="">
+          </div>
+          <div class="right-navbar">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-basket"></i>
+            <i class="fas fa-user"></i>
+          </div>
+        </nav>
+        <div class="nav-toggle">
+          <span class="nav-toggle-item"></span>
+        </div>
+      </header>
+   <!-- Breadcrumb -->
+
+   <section class="breadcrumbs-area">
+    <h3 class="text-center">SHOPPING GUIDE</h3>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item text-uppercase"><a href="../main/main.html">Home</a></li>
+        <li class="breadcrumb-item text-uppercase"><a href="services.html">Services</a></li>
+        <li class="breadcrumb-item text-uppercase active" aria-current="page">SHOPPING GUIDE</li>
+    </ol>
+</section>
+
+<!-- Section -->
+<section class="service-block mt-5 mb-5">
+  <article class="container">
+    <img src="../images/blog5.jpg" alt="">
+    <div class="text-content">
+      <h4>SERVICE OVERVIEW</h4>
+      <p>Using cosmetics is like a science – every element should be on its own place. We can be your guide in this amazing world full of surprises and myriads of exciting details and bonuses. Check the main steps in our cooperation:</p>
+      <ol>
+        <li><span>Selecting a Cosmetics Consultant</span></li>
+        <li><span>Skin Type Determination</span>
+          <ol><li><span>Skin Care Line</span></li>
+          <li><span>Decorative Cosmetic</span></li></ol>        
+        </li>
+        <li><span>Evening Make-up Rules</span></li>      
+      </ol>
+      <p>On each step our assistant will communicate with you personally to know you better and to offer you the most appropriate service and tips. You will know what is your basic cosmetics and get expert’s advices.</p>
+      <button>Contact with us</button>
+    </div>   
+  </article>
+</section>
+
+      <footer >
+        <div class="col-lg-2 col-md-3 pb-3 col-sm-6">
+          <h5>Collection</h5>
+          <ul>
+            <a href=""><h6>Bracelets</h6></a>
+            <a href=""><h6>Bridal</h6></a>
+            <a href=""><h6>Earrings</h6></a>
+            <a href=""><h6>Necklaces</h6></a>
+            <a href=""><h6>Rings</h6></a>        
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 pb-3 col-sm-6">
+          <h5>Pages</h5>
+          <ul>
+            <a href=""><h6>Home</h6></a>
+            <a href=""><h6>Blog</h6></a>
+            <a href=""><h6>Shop</h6></a>
+            <a href=""><h6>Services</h6></a>
+            <a href=""><h6>Gallery</h6></a>        
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 pb-3">
+          <h5>About</h5>
+          <p>Chantalle is a luxurios jewelry store where every woman finds her perfect item, created specially for her. Our mission is to highlight ladies’ beauty and add some chic, glamour and brightness to their outfit.</p>
+        </div>
+        <div class="col-lg-4 pb-3">
+          <h5>SIGN UP FOR OUR NEWSLETTER</h5>
+          <p>Want to be informed about the latest novelties and updates? Subscribe now!</p>
+          <form action="">
+            <input type="text" placeholder="Enter your email">
+            <button><i class="fas fa-envelope"></i></button>
+          </form>
+        </div>
+      </footer>
+</body>
+</html>

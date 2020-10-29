@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css"> -->
-    <!-- <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
-    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script> -->
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -37,7 +33,7 @@
         <nav class="nav">
             <div class="left-navbar">
                 <a class="nav-link  text-uppercase" id="home" href="../main/main.html">Home</a>
-                <a class="nav-link active text-uppercase" href="#" id="shopDropdown">
+                <a class="nav-link active text-uppercase" href="shop.html" id="shopDropdown">
                     Shop <i class="fas fa-angle-down pl-1"></i>
                 </a>
                 <div id="shop" class="dropdown-content" aria-labelledby="shopDropdown">
@@ -92,22 +88,22 @@
                 </div>
 
 
-                <a class="nav-link text-uppercase" id="blog" href="#">Blog</a>
+                <a class="nav-link text-uppercase" id="blog" href="../blog/blog.html">Blog</a>
                 <div>
 
-                    <a class="nav-link  text-uppercase" href="#" id="servicesDropdown" onfocus="hover(this)">
+                    <a class="nav-link  text-uppercase" href="../services/services.html" id="servicesDropdown" onfocus="hover(this)">
                         Services <i class="fas fa-angle-down pl-1"></i>
                     </a>
                     <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown">
                         <ul>
-                            <h6><a href="">Shopping guide</a></h6>
-                            <h6><a href="">Wardrobe assistant</a></h6>
-                            <h6><a href="">Basic cosmetics</a></h6>
+                            <h6><a href="../services/service.html">Shopping guide</a></h6>
+                            <h6><a href="../services/service.html">Wardrobe assistant</a></h6>
+                            <h6><a href="../services/service.html">Basic cosmetics</a></h6>
                         </ul>
                     </div>
                 </div>
 
-                <a class="nav-link text-uppercase" id="gallery" href="#">Gallery</a>
+                <a class="nav-link text-uppercase" id="gallery" href="../gallery/gallery.html">Gallery</a>
             </div>
 
             <div class="logo">
@@ -130,8 +126,8 @@
     <section class="breadcrumbs-area">
         <h3 class="text-center">SHOP</h3>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../main/main.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+            <li class="breadcrumb-item text-uppercase"><a href="../main/main.html">Home</a></li>
+            <li class="breadcrumb-item text-uppercase active" aria-current="page">Shop</li>
         </ol>
     </section>
 
@@ -141,11 +137,12 @@
             <div id="categories">
                 <h5 class="text-center">Categories</h5>
                 <ul>
-                    <h6><input type="checkbox" checked>Bracelets</h6>
+                    <!-- <h6><input type="checkbox" checked>Bracelets</h6> -->
+                    <h6><input type="checkbox" >Bracelets</h6>
                     <h6><input type="checkbox">Bridal</h6>
                     <h6><input type="checkbox">Earrings</h6>
-                    <h6><input type="checkbox">Necklaces</h6>
-                    <h6><input type="checkbox">Rings</h6>
+                    <h6><input type="checkbox" >Necklaces</h6>
+                    <h6><input type="checkbox" >Rings</h6>
                 </ul>
             </div>
             <div class="filter mb-5 mt-5">
@@ -182,6 +179,7 @@
                   children[13].childNodes[1].innerHTML=this.value;" />
                 </div>
             </div>
+            <!-- Products -->
             <div class="products">
                 <h5 class="text-center">Products</h5>
                 <div class="pb-4 pt-3 d-flex">
@@ -216,10 +214,12 @@
                 </div>
             </div>
         </section>
+
+        <!-- List of prodducts -->
         <section class="goods col-lg-9 col-md-8">
             <div>
                 <div class="hot-offers">
-                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6 filterDiv earrings necklaces rings">
                         <a href="">
                             <div class="image-card">
                                 <img src="../images/Thread-18-karat-rose-gold-diamond-eternity-ring-3-600x900.jpg"
@@ -241,7 +241,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6 filterDiv necklaces rings">
                         <a href="">
                             <div class="image-card">
                                 <img src="../images/Technical-Berbere-18-karat-rose-gold-ring-3-768x1152.jpg" alt="">
@@ -261,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6 filterDiv bracelets necklaces">
                         <a href="">
                             <div class="image-card">
                                 <img src="../images/Gold-plated-choker-768x1152.jpg" alt="">
@@ -279,7 +279,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6 filterDiv bracelets bridal">
                         <a href="">
                             <div class="image-card">
                                 <img src="../images/Gold-plated-bangle-768x1152.jpg" alt="">
@@ -297,7 +297,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6 filterDiv necklaces earrings">
                         <a href="">
                             <div class="image-card">
                                 <img src="../images/Mini-Petal-rose-gold-vermeil-and-silver-earrings-768x1152.jpg"
@@ -317,7 +317,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6">
+                    <div class="col-lg-4 col-md-6 mb-5 col-sm-6 filterDiv bracelets bridal">
                         <a href="">
                             <div class="image-card">
                                 <img src="../images/18-karat-gold-bracelet-3-768x1152.jpg" alt="">
