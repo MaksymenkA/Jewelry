@@ -18,6 +18,9 @@
   background-color: transparent !important;
   font-size: 13px;
 }
+.breadcrumb li{
+  font-weight: 400;
+}
 .breadcrumb-item.active {
   color: #f0a285 !important;
 }
