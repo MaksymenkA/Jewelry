@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
-  <link rel="icon" type="image/png" href="../images/favicon.png"/>
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
   <link rel="stylesheet" href="../main/main.css">
   <link rel="stylesheet" href="gallery.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -32,10 +32,13 @@
     <nav class="nav">
       <div class="left-navbar">
         <a class="nav-link  text-uppercase" id="home" href="../main/main.html">Home</a>
-        <a class="nav-link  text-uppercase" href="../shop/shop.html" id="shopDropdown">
+        <a class="nav-link  text-uppercase" id="shopDropdown" style="cursor: pointer;">
           Shop <i class="fas fa-angle-down pl-1"></i>
         </a>
-        <div id="shop" class="dropdown-content" aria-labelledby="shopDropdown">
+        <div id="shop" class="dropdown-content " aria-labelledby="shopDropdown">
+          <div class="col-lg-12 mb-2">
+            <h3><a href="../shop/shop.html" style="font-weight: 600;">Shop</a></h3>
+          </div>
           <div id="jewelry" class="col-lg-2 col-sm-6">
             <h5><a href="">Jewelry</a></h5>
             <ul>
@@ -83,16 +86,13 @@
             <img src="../images/header-shop.jpg" alt="">
           </div>
         </div>
-
-
         <a class="nav-link text-uppercase" id="blog" href="../blog/blog.html">Blog</a>
         <div>
-
-          <a class="nav-link  text-uppercase" href="../services/services.html" id="servicesDropdown"
-            onfocus="hover(this)">
+          <a class="nav-link  text-uppercase" style="cursor: pointer;" id="servicesDropdown" onfocus="hover(this)">
             Services <i class="fas fa-angle-down pl-1"></i>
           </a>
           <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown">
+            <h3 class="col-lg-12 pl-0"><a href="../services/services.html" style="font-weight: 600;">Services</a></h3>
             <ul>
               <h6><a href="../services/service.html">Shopping guide</a></h6>
               <h6><a href="../services/service.html">Wardrobe assistant</a></h6>
@@ -100,10 +100,8 @@
             </ul>
           </div>
         </div>
-
         <a class="nav-link text-uppercase active" id="gallery" href="gallery.html">Gallery</a>
       </div>
-
       <div class="logo">
         <img src="../images/logo.png" alt="">
       </div>
@@ -130,7 +128,7 @@
 
   <!-- Gallery -->
   <section class="image-gallery">
-    <article >
+    <article>
       <div class="m-2 d-flex justify-content-center position-relative">
         <img src="../images/gallery.jpg" alt="" class="w-100 h-auto">
         <div class="text-center text-content">
@@ -139,8 +137,8 @@
         </div>
       </div>
     </article>
-    
-    <article >
+
+    <article>
       <div class="m-2 d-flex justify-content-center position-relative">
         <img src="../images/follow1.jpg" alt="" class="w-100 h-auto">
         <div class="text-center text-content">
@@ -149,7 +147,7 @@
         </div>
       </div>
     </article>
-    <article >
+    <article>
       <div class="m-2 d-flex justify-content-center position-relative">
         <img src="../images/follow2.jpg" alt="" class="w-100 h-auto">
         <div class="text-center text-content">
@@ -158,7 +156,7 @@
         </div>
       </div>
     </article>
-    <article >
+    <article>
       <div class="m-2 d-flex justify-content-center position-relative">
         <img src="../images/blog3.jpg" alt="" class="w-100 h-auto">
         <div class="text-center text-content">
@@ -167,7 +165,7 @@
         </div>
       </div>
     </article>
-    <article >
+    <article>
       <div class="m-2 d-flex justify-content-center position-relative">
         <img src="../images/blog1.jpg" alt="" class="w-100 h-auto">
         <div class="text-center text-content">
@@ -176,7 +174,7 @@
         </div>
       </div>
     </article>
-    <article >
+    <article>
       <div class="m-2 d-flex justify-content-center position-relative">
         <img src="../images/blog2.jpg" alt="" class="w-100 h-auto">
         <div class="text-center text-content">

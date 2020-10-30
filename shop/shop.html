@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../images/favicon.png"/>
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
     <link rel="stylesheet" href="../main/main.css">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -34,10 +34,13 @@
         <nav class="nav">
             <div class="left-navbar">
                 <a class="nav-link  text-uppercase" id="home" href="../main/main.html">Home</a>
-                <a class="nav-link active text-uppercase" href="shop.html" id="shopDropdown">
+                <a class="nav-link  text-uppercase active" id="shopDropdown" style="cursor: pointer;">
                     Shop <i class="fas fa-angle-down pl-1"></i>
                 </a>
-                <div id="shop" class="dropdown-content" aria-labelledby="shopDropdown">
+                <div id="shop" class="dropdown-content " aria-labelledby="shopDropdown">
+                    <div class="col-lg-12 mb-2">
+                        <h3><a href="../shop/shop.html" style="font-weight: 600;">Shop</a></h3>
+                    </div>
                     <div id="jewelry" class="col-lg-2 col-sm-6">
                         <h5><a href="">Jewelry</a></h5>
                         <ul>
@@ -90,13 +93,15 @@
 
 
                 <a class="nav-link text-uppercase" id="blog" href="../blog/blog.html">Blog</a>
-                <div>
 
-                    <a class="nav-link  text-uppercase" href="../services/services.html" id="servicesDropdown" onfocus="hover(this)">
-                        Services <i class="fas fa-angle-down pl-1"></i>
-                    </a>
-                    <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown">
-                        <ul>
+                    <div>
+                        <a class="nav-link  text-uppercase" style="cursor: pointer;"  id="servicesDropdown"
+                          onfocus="hover(this)">
+                          Services <i class="fas fa-angle-down pl-1"></i>
+                        </a>
+                        <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown" >
+                          <h3 class="col-lg-12 pl-0"><a href="../services/services.html" style="font-weight: 600;">Services</a></h3>
+                                <ul>
                             <h6><a href="../services/service.html">Shopping guide</a></h6>
                             <h6><a href="../services/service.html">Wardrobe assistant</a></h6>
                             <h6><a href="../services/service.html">Basic cosmetics</a></h6>
@@ -139,11 +144,11 @@
                 <h5 class="text-center">Categories</h5>
                 <ul>
                     <!-- <h6><input type="checkbox" checked>Bracelets</h6> -->
-                    <h6><input type="checkbox" >Bracelets</h6>
+                    <h6><input type="checkbox">Bracelets</h6>
                     <h6><input type="checkbox">Bridal</h6>
                     <h6><input type="checkbox">Earrings</h6>
-                    <h6><input type="checkbox" >Necklaces</h6>
-                    <h6><input type="checkbox" >Rings</h6>
+                    <h6><input type="checkbox">Necklaces</h6>
+                    <h6><input type="checkbox">Rings</h6>
                 </ul>
             </div>
             <div class="filter mb-5 mt-5">

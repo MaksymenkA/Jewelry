@@ -29,11 +29,14 @@
         <nav class="nav">
           <div class="left-navbar">
             <a class="nav-link  text-uppercase" id="home" href="../main/main.html">Home</a>
-            <a class="nav-link  text-uppercase" href="../shop/shop.html" id="shopDropdown" >
+            <a class="nav-link  text-uppercase"  id="shopDropdown" style="cursor: pointer;">
               Shop <i class="fas fa-angle-down pl-1"></i>
             </a>
-            <div id="shop" class="dropdown-content" aria-labelledby="shopDropdown">
-              <div id="jewelry" class="col-lg-2 col-sm-6">
+            <div id="shop" class="dropdown-content " aria-labelledby="shopDropdown">
+              <div class="col-lg-12 mb-2">
+                <h3><a href="../shop/shop.html" style="font-weight: 600;">Shop</a></h3>
+              </div>
+                  <div id="jewelry" class="col-lg-2 col-sm-6">
                 <h5><a href="">Jewelry</a></h5>
                 <ul>
                   <h6><a href="">Bracelets</a></h6>
@@ -83,13 +86,15 @@
     
     
             <a class="nav-link text-uppercase" id="blog" href="../blog/blog.html">Blog</a>
-            <div>
     
-              <a class="nav-link active text-uppercase" href="services.html" id="servicesDropdown" onfocus="hover(this)">
-                Services <i class="fas fa-angle-down pl-1"></i>
-              </a>
-              <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown">
-                <ul>
+              <div>
+                <a class="nav-link  text-uppercase" style="cursor: pointer;"  id="servicesDropdown"
+                  onfocus="hover(this)">
+                  Services <i class="fas fa-angle-down pl-1"></i>
+                </a>
+                <div id="services" class="dropdown-content" aria-labelledby="servicesDropdown" >
+                  <h3 class="col-lg-12 pl-0"><a href="../services/services.html" style="font-weight: 600;">Services</a></h3>
+                      <ul>
                   <h6><a href="">Shopping guide</a></h6>
                   <h6><a href="">Wardrobe assistant</a></h6>
                   <h6><a href="">Basic cosmetics</a></h6>

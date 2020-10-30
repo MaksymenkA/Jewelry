@@ -65,14 +65,13 @@
   opacity: 1;
 }
 
-
 @media (min-width: 768px) {
-    .image-gallery article {
-      display: flex;
-      flex: 1 1 calc((100% / 2) - 2rem);
-    }
+  .image-gallery article {
+    display: flex;
+    flex: 1 1 calc((100% / 2) - 2rem);
   }
-  
+}
+
 @media (min-width: 992px) {
   .image-gallery article {
     display: flex;
@@ -80,7 +79,7 @@
   }
 }
 @media (min-width: 1150px) {
-    .image-gallery {
-      padding: 10px 50px;
-    }
+  .image-gallery {
+    padding: 10px 50px;
   }
+}
