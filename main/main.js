@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  (function ($) {
+  
     $(".owl-carousel").owlCarousel({
       responsiveClass: true,
       stagePadding: 23,
@@ -24,7 +24,7 @@ $(document).ready(function () {
         }
       }
     });
-  });
+
 });
 
 $(document).ready(function (e) {
